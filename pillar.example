@@ -1,0 +1,12 @@
+duplicity:
+  jobs:
+    srv-git:
+      src: /srv/git
+      dest: s3://s3.amazonaws.com/bucket.name/folder
+      encrypt_key: 3CCC3A3A
+      aws_secret_access_key: DFGSDGFSDGFSDGFGGG352345345	
+      aws_access_key_id: SDFGSDFGDF3563463456
+#     sign_key: 3CCC3A3A
+#     passphrase: signkeypassword
+      remove_all_but_n_full: 5
+      full_if_older_than: 7D
